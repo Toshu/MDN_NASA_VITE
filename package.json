@@ -18,5 +18,8 @@
         "endOfLine": "lf"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^2.3.1"
+    }
 }
