@@ -6,6 +6,17 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "prettier": {
+        "printWidth": 120,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "endOfLine": "lf"
+    },
     "author": "",
     "license": "ISC"
 }
