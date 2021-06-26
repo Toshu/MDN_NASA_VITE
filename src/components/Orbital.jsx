@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Hazard from './Hazard';
 import Passing from './Passing';
@@ -12,10 +13,17 @@ export default function Orbital({ name, is_potentially_hazardous_asteroid, close
             </p>
             <Passing data={close_approach_data} />
             <p className="more">
-                <a href={nasa_jpl_url} target="_blank">
+                <a href={nasa_jpl_url} target="_blank" rel="noreferrer">
                     Find out more
                 </a>
             </p>
         </div>
     );
 }
+
+Orbital.propTypes = {
+    name: PropTypes.string.isRequired,
+    is_potentially_hazardous_asteroid: PropTypes.bool.isRequired,
+    close_approach_data: PropTypes.array.isRequired,
+    nasa_jpl_url: PropTypes.string.isRequired
+};
